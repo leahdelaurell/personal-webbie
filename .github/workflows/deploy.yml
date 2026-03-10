@@ -5,9 +5,15 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      GIT_USER: leahdelaurell
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - name: Checkout repo
@@ -26,6 +32,4 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        run: USE_SSH=true npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run deploy
