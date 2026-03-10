@@ -1,0 +1,22 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureDescription {
+  color: var(--ifm-color-primary);
+}
+
+.featureTitle {
+  color: var(--ifm-color-primary-dark);
+}
+
+/* used for both svg components and png/img elements */
+.featurePng,
+.featureSvg {
+  height: 200px;
+  width: 200px;
+  object-fit: contain;
+}

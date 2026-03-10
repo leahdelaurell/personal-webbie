@@ -1,2 +1,41 @@
-# personal-webbie
-I have already made like 3 different websites, but realizing I should start with something simple to just get it out there
+# Website
+
+This my personal website using [Docusaurus](https://docusaurus.io/), a modern static website generator. The reason I decided to use this as my website was due to getting spun up quickly and also for generator blog posts. I want to easily create blog posts in an mdx file instead us needing to use react to build it all out.
+
+## Installation
+
+```bash
+npm i
+```
+
+## Local Development
+
+```bash
+npm start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+npm build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true npm deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> npm deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
