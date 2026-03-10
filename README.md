@@ -26,16 +26,16 @@ This command generates static content into the `build` directory and can be serv
 
 ## Deployment
 
-Using SSH:
+Using SSH (requires a deploy key / SSH key configured for GitHub):
 
 ```bash
 USE_SSH=true npm deploy
 ```
 
-Not using SSH:
+Not using SSH (requires a Personal Access Token or `GITHUB_TOKEN` in CI):
 
 ```bash
 GIT_USER=leahdelaurell npm deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+If you are using GitHub Pages for hosting, this command builds the site and pushes it to the `gh-pages` branch. If you see your README instead of the site, it means the deploy didn’t successfully overwrite `gh-pages` with the build output.
