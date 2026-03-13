@@ -1,0 +1,26 @@
+{
+  "id": "about-me/about-me",
+  "title": "about-me",
+  "description": "First Page",
+  "source": "@site/docs/about-me/about-me.md",
+  "sourceDirName": "about-me",
+  "slug": "/about-me/",
+  "permalink": "/docs/about-me/",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "aboutMeSidebar",
+  "previous": {
+    "title": "About Me - Basics",
+    "permalink": "/docs/category/about-me---basics"
+  },
+  "next": {
+    "title": "Projects",
+    "permalink": "/docs/projects"
+  }
+}

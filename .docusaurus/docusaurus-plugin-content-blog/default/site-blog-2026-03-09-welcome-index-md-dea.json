@@ -1,0 +1,44 @@
+{
+  "permalink": "/blog/welcome",
+  "source": "@site/blog/2026-03-09-welcome/index.md",
+  "title": "Welcome",
+  "description": "Welcome to my firs blog page! I will eventually write some stuff in here",
+  "date": "2026-03-09T00:00:00.000Z",
+  "tags": [
+    {
+      "inline": false,
+      "label": "Hello",
+      "permalink": "/blog/tags/hello",
+      "description": "Hello tag"
+    }
+  ],
+  "readingTime": 0.07,
+  "hasTruncateMarker": false,
+  "authors": [
+    {
+      "name": "Leah Underhill",
+      "title": "Full Stack Software Architect/Technical Lead",
+      "url": "https://linkedin.com/in/leahunderhill",
+      "page": {
+        "permalink": "/blog/authors/leahunderhill"
+      },
+      "socials": {
+        "linkedin": "https://www.linkedin.com/in/leah-de-laurell/",
+        "github": "https://github.com/leahdelaurell"
+      },
+      "imageURL": "https://github.com/leahdelaurell.png",
+      "key": "leahunderhill"
+    }
+  ],
+  "frontMatter": {
+    "slug": "welcome",
+    "title": "Welcome",
+    "authors": [
+      "leahunderhill"
+    ],
+    "tags": [
+      "hello"
+    ]
+  },
+  "unlisted": false
+}
