@@ -1,4 +1,4 @@
-# Website
+# Leahs Webbie
 
 This my personal website using [Docusaurus](https://docusaurus.io/), a modern static website generator. The reason I decided to use this as my website was due to getting spun up quickly and also for generator blog posts. I want to easily create blog posts in an mdx file instead us needing to use react to build it all out.
 
