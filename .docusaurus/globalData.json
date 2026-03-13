@@ -1,0 +1,38 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/personal-webbie/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/personal-webbie/docs",
+          "mainDocId": "about-me",
+          "docs": [
+            {
+              "id": "about-me",
+              "path": "/personal-webbie/docs/about-me",
+              "sidebar": "aboutMeSidebar"
+            },
+            {
+              "id": "projects",
+              "path": "/personal-webbie/docs/projects",
+              "sidebar": "aboutMeSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "aboutMeSidebar": {
+              "link": {
+                "path": "/personal-webbie/docs/about-me",
+                "label": "about-me"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}
