@@ -5,14 +5,13 @@ slug: /about-me
 
 # About me
 
-Hi, I&apos;m **Leah** – a software engineer and maker with a passion for open
-source, clean code, and good design. I build tools, write tutorials, and
-sometimes rant about tech on my blog.
+Hi, I&apos;m **Leah** – a Full‑Stack Software Architect / Technical Lead with a passion for building high‑performance, scalable, and maintainable applications.
 
-- 🔭 Currently working on a React component library
-- 🌱 Learning Rust and distributed systems
-- 💬 Ask me about JavaScript, CSS, and documentation
-- 📫 Reach me at [leah_del3@yahoo.com](mailto:leah_del3@yahoo.com)
+I enjoy designing modern web platforms, building component libraries, and helping teams adopt best practices for frontend and backend code.
 
-This section can be expanded however you like: education, experience,
-interests, anything that helps visitors know who you are.
+- 💼 Currently leading the architecture and implementation of micro‑frontend platforms and event‑driven systems at CoBank.
+- 🧩 Deep experience with React + TypeScript, AWS, Kubernetes, Postgres, GraphQL, and modern testing (Playwright).
+- 🛠️ Built operational tooling and experimentation systems (A/B, canary, feature flags) for large consumer platforms.
+- 🌱 Exploring Rust, distributed systems, and developer experience tooling.
+- 💬 Always thinking about developer ergonomics, documentation, and clean design.
+

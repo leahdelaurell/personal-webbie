@@ -47,7 +47,9 @@ const config: Config = {
   themeConfig: {
     image: 'img/leah-underhill.png',
     colorMode: {
-      respectPrefersColorScheme: true,
+      defaultMode: 'dark',
+      disableSwitch: false,            // keep toggle if you still want user choice
+      respectPrefersColorScheme: false, // ignore system preference
     },
     navbar: {
       title: 'Leah Underhill',

@@ -1,12 +1,10 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 type FeatureItem = {
   title: string;
-  // pngPath holds the static path returned by webpack/require for image files
   pngPath: string;
   description: ReactNode;
 };
@@ -29,7 +27,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Explore some of the apps, libraries, and open source work I&apos;ve
-        built. <Link to="/docs/projects">See the list</Link>
+        built. <Link to="/docs/projects">See the list →</Link>
       </>
     ),
   },
@@ -39,17 +37,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Read my thoughts on development, productivity, and the occasional
-        ramble. <Link to="/blog">Go to blog</Link>
-      </>
-    ),
-  },
-  {
-    title: 'Contact',
-    pngPath: require('@site/static/img/contact.png').default,
-    description: (
-      <>
-        Feel free to <a href="mailto:leah@example.com">send me an email</a> or
-        connect on <a href="https://twitter.com/leah">Twitter</a>.
+        ramble. <Link to="/blog">Go to blog →</Link>
       </>
     ),
   },
@@ -57,8 +45,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({title, pngPath, description}: FeatureItem) {
   return (
-    // use col--3 so the grid supports four items side-by-side
-    <div className={clsx('col col--3')}>
+    <div className={clsx('col col--4')}>
       <div className="text--center">
         <img
           src={pngPath}
@@ -68,7 +55,6 @@ function Feature({title, pngPath, description}: FeatureItem) {
         />
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading className={styles.featureTitle} as="h3">{title}</Heading>
         <p className={styles.featureDescription}>{description}</p>
       </div>
     </div>
