@@ -12,20 +12,6 @@
  * lightening/darkening the base purple.
  */
 :root {
-  --ifm-color-primary: #8c76d5;            /* medium purple */
-  --ifm-color-primary-dark: #7b5cc0;
-  --ifm-color-primary-darker: #6a4bb0;
-  --ifm-color-primary-darkest: #593e95;
-  --ifm-color-primary-light: #a294e6;      /* lavender */
-  --ifm-color-primary-lighter: #b0b2ec;
-  --ifm-color-primary-lightest: #e2d9f8;   /* very pale lavender */
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(140,118,213,0.1);
-}
-
-/* dark theme tweaks: brighter/lighter purples to contrast against dark
-   backgrounds. keep other colours (text, links) legible. */
-[data-theme='dark'] {
   --ifm-color-primary: #b0b2ec;
   --ifm-color-primary-dark: #8c76d5;
   --ifm-color-primary-darker: #7b5cc0;
@@ -33,7 +19,27 @@
   --ifm-color-primary-light: #deeefc;
   --ifm-color-primary-lighter: #f4f6fc;
   --ifm-color-primary-lightest: #ffffff;
+  --ifm-color-content: #333;
+  --ifm-menu-color: #333;
+  --ifm-background-color: #e6e0f8;
   --docusaurus-highlighted-code-line-bg: rgba(140,118,213,0.2);
+}
+
+/* dark theme tweaks: brighter/lighter purples to contrast against dark
+   backgrounds. keep other colours (text, links) legible. */
+[data-theme='dark'] {
+  --ifm-color-primary: #8c76d5;            /* medium purple */
+  --ifm-color-primary-dark: #7b5cc0;
+  --ifm-color-primary-darker: #6a4bb0;
+  --ifm-color-primary-darkest: #593e95;
+  --ifm-color-primary-light: #a294e6;      /* lavender */
+  --ifm-color-primary-lighter: #b0b2ec;
+  --ifm-color-primary-lightest: #e2d9f8; 
+  --ifm-color-content: #593e95;  /* very pale lavender */
+  --ifm-menu-color: #b0b2ec; /* lighter purple for menu background */
+  --ifm-background-color: #e6e0f8;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(140,118,213,0.1);
 }
 
 /* additional global stylistic touches */
