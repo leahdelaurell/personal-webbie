@@ -17,7 +17,9 @@ const FeatureList: FeatureItem[] = [
       <>
         Learn more about my background, interests, and the projects I&apos;m
         passionate about.{' '}
-        <Link to="/docs/about-me">Read more →</Link>
+        <Link to="/docs/about-me" className="featureDescription">
+          Read more →
+        </Link>
       </>
     ),
   },

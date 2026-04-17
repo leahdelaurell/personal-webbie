@@ -6,7 +6,7 @@
 }
 
 .featureDescription {
-  color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary-darker);
 }
 
 .featureTitle {
@@ -19,4 +19,21 @@
   height: 200px;
   width: 200px;
   object-fit: contain;
+}
+
+/* Mobile responsive improvements */
+@media screen and (max-width: 768px) {
+  .featurePng,
+  .featureSvg {
+    height: 150px;
+    width: 150px;
+  }
+
+  .featureDescription {
+    font-size: 0.95rem;
+  }
+
+  .featureTitle {
+    font-size: 1.25rem;
+  }
 }

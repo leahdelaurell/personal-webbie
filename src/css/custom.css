@@ -28,24 +28,90 @@
 /* dark theme tweaks: brighter/lighter purples to contrast against dark
    backgrounds. keep other colours (text, links) legible. */
 [data-theme='dark'] {
-  --ifm-color-primary: #8c76d5;            /* medium purple */
-  --ifm-color-primary-dark: #7b5cc0;
-  --ifm-color-primary-darker: #6a4bb0;
-  --ifm-color-primary-darkest: #593e95;
-  --ifm-color-primary-light: #a294e6;      /* lavender */
-  --ifm-color-primary-lighter: #b0b2ec;
-  --ifm-color-primary-lightest: #e2d9f8; 
-  --ifm-color-content: #593e95;  /* very pale lavender */
-  --ifm-menu-color: #b0b2ec; /* lighter purple for menu background */
-  --ifm-background-color: #e6e0f8;
+  --ifm-color-primary: #a89ff3;            /* brighter purple for dark bg */
+  --ifm-color-primary-dark: #8c76d5;
+  --ifm-color-primary-darker: #7b5cc0;
+  --ifm-color-primary-darkest: #6a4bb0;
+  --ifm-color-primary-light: #b0b2ec;      /* light lavender */
+  --ifm-color-primary-lighter: #d4c9f8;
+  --ifm-color-primary-lightest: #e8e0ff; 
+  --ifm-color-content: #c9c4e0;  /* readable light purple text for dark backgrounds */
+  --ifm-menu-color: #c9c4e0; /* light text for menu background */
+  --ifm-background-color: rgb(24, 18, 25);  /* #2b2d42; dark background for dark mode */
+  --ifm-background-surface-primary: rgb(24, 18, 25); /* #261a29;  dark surface */
+  --ifm-background-surface-secondary: rgb(24, 18, 25); /* #2b2d42; slightly lighter surface */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(140,118,213,0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(168,159,243,0.15);
+}
+
+/* Ensure consistent background colors for light mode */
+.main-wrapper {
+  background-color: var(--ifm-background-color);
+}
+
+article {
+  background-color: var(--ifm-background-color);
+}
+
+.sidebar__inner {
+  background-color: transparent;
+}
+
+/* Ensure dark mode applies to main content area */
+[data-theme='dark'] .main-wrapper {
+  background-color: var(--ifm-background-surface-primary);
+}
+
+[data-theme='dark'] article {
+  background-color: var(--ifm-background-surface-primary);
+}
+
+/* Ensure dark background in all sidebar sections */
+[data-theme='dark'] .sidebar__inner {
+  background-color: var(--ifm-background-color);
+}
+
+/* Force dark backgrounds on cards and other components */
+[data-theme='dark'] .card {
+  background-color: #2b2d42;
+  color: #c9c4e0;
+}
+
+[data-theme='dark'] .tabs {
+  --ifm-tabs-color-active: #b8b0ff;
+  --ifm-tabs-color-inactive: #c9c4e0;
+}
+
+/* Override any light background colors used by Docusaurus components */
+[data-theme='dark'] .pagination {
+  background-color: transparent;
+}
+
+[data-theme='dark'] .pagination__page {
+  background-color: #2b2d42;
+  color: #c9c4e0;
+}
+
+[data-theme='dark'] .pagination__page--active {
+  background-color: #a89ff3;
+  color: #1a1d29;
 }
 
 /* additional global stylistic touches */
 
+/* Light mode - light background */
 body {
   background-color: var(--ifm-color-primary-lightest);
+}
+
+/* Dark mode - dark background */
+[data-theme='dark'] body {
+  background-color: #1a1d29;
+}
+
+[data-theme='dark'] footer {
+  background: linear-gradient(135deg, #8c76d5 0%, #b0b2ec 100%);
+  color: #fff;
 }
 
 footer {
@@ -55,4 +121,28 @@ footer {
 
 footer a {
   color: #f4f6fc;
+}
+
+/* Mobile-specific improvements */
+@media screen and (max-width: 768px) {
+  :root {
+    --ifm-color-primary: #9a9ce8;  /* slightly lighter for mobile */
+    --ifm-color-content: #333;  /* ensure dark text in light mode */
+  }
+
+  [data-theme='dark'] {
+    --ifm-color-primary: #b8b0ff;  /* even brighter on mobile in dark mode */
+    --ifm-color-content: #e8e0ff;  /* bright text for dark mode on mobile */
+    --ifm-menu-color: #e8e0ff;
+  }
+
+  body {
+    font-size: 16px; /* ensures zoom-friendly font size on mobile */
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+  }
 }
