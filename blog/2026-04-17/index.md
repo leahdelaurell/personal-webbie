@@ -5,7 +5,7 @@ authors: [leahunderhill]
 tags: [personal-website]
 ---
 
-It has taken me the majority of my career to finally stand up a personal website. I have been putting it off for SO long that I thought it had to be this huge undertaking. I thought I had to put it up into the cloud and find a specific url name that I liked. I thought that I had to make it look beautiful and have all the things in it that show how fantastic I am at code. The real reason I have a website today is all thanks to AI. 
+It has taken me the majority of my career to finally stand up a personal website. I have been putting it off for SO long that I thought it had to be this huge undertaking. I felt like it had to be put it up into the cloud and find a specific url name that was perfect. I thought that it needed to look beautiful and have all the things in it that show how fantastic I am at code. The real reason I have a website today is all thanks to AI. 
 
 {/* truncate */}
 
